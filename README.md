@@ -34,6 +34,6 @@ Database does not permit two users with same username or gmail to register on th
 When you re signed in successfully you can browse, calculate BMI , Track your menstrual cycle , Read Magazines , 
 Illness/Vacciness and update your password/gmail.
 
-Demo video- in the above files (demo.mkv)
-Pitch video- https://vimeo.com/511613743
+Demo video- in the above files (demo.mkv) \\
+Pitch video- https://vimeo.com/511613743 \\
 Presentation link- https://docs.google.com/presentation/d/1U_RIuwRUS1XnTTBmL6amXJk2Z-n0Dm9S/edit#slide=id.p1
