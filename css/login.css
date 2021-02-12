@@ -1,0 +1,259 @@
+.login__register {
+  display: flex;
+  height: 89vh;
+  width: 90vw;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.card {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  border-radius: 1.5rem;
+  perspective: 800rem;
+  -moz-perspective: 800rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__side {
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: all 1s ease;
+  background-color: #f6f7f9;
+}
+
+.card__side--login {
+  width: 100%;
+  box-shadow: 0 1.4rem 3rem rgba(86, 197, 179, 0.7);
+}
+
+.card__side--login-rotate {
+  transform: rotateY(-180deg);
+}
+
+.card__side--login-rerotate {
+  transform: rotateY(0);
+}
+
+.card__side--signup {
+  height: 100%;
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 1.4rem 3rem rgba(174, 85, 185, 0.7);
+}
+
+.card__side--signup-rotate {
+  transform: rotateY(0);
+}
+
+.card__side--signup-rerotate {
+  transform: rotateY(180deg);
+}
+
+.card__heading {
+  font-family: 'Nunito',
+    sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+}
+
+.card .switch {
+  margin-top: auto;
+  text-align: center;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: .9rem;
+}
+
+.form__input {
+  font-size: 1.3rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  display: block;
+  padding: .8rem 1.2rem;
+  border-radius: 2px;
+  background-color: #fff;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #2ebd59;
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid red;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #686666;
+}
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-bottom: .7rem;
+  display: block;
+  transition: all .3s;
+}
+
+.form__input:placeholder-shown+.form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.btn {
+  display: block;
+  margin: 1rem auto 0;
+  border: none;
+  padding: .8rem 4rem;
+  border-radius: .8rem;
+  /* background-image: linear-gradient(to right, #05d6d9, blueviolet); */
+  background-color: #3bb78f;
+  background-image: linear-gradient(315deg, #2ebd59 0%, #009b2e 74%);
+  color: #fff;
+  font: inherit;
+  text-transform: uppercase;
+  transition: all .2s;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 0.8rem 1.8rem rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0.7rem 1.4rem rgba(0, 0, 0, 0.15);
+}
+
+.btn--text {
+  text-decoration: none;
+  color: #2ebd59;
+  transition: all .3s;
+}
+
+.btn--text:hover {
+  color: #009b2e;
+  cursor: pointer;
+}
+
+.mb-lg {
+  margin-bottom: 2.5rem;
+}
+
+.mb-sm {
+  margin-bottom: 1.5rem;
+}
+
+.mb-elg {
+  margin-bottom: 5rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  /* background-image: radial-gradient(circle at top left, #05d6d9, #6617cb, #cb218e); */
+  background-color: #bacc53;
+  /* background-image: linear-gradient(315deg, #000000 0%, #242424 74%); */
+  background-image: url(../img/Untitled.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2b2a2a;
+  font-family: 'Open Sans',
+    sans-serif;
+}
+
+.nav__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito',
+    sans-serif;
+  margin-top: 2.5rem;
+}
+
+.nav__title>*:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.nav__title img {
+  width: 4.5rem;
+}
+
+.nav__title--tag {
+  font-size: 3.2rem;
+  letter-spacing: .3rem;
+  font-weight: 700;
+}
+
+.error {
+  color: red;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: .8rem;
+  margin-top: -.8rem;
+}
+
+.herobg {
+  width: 40%;
+}
+
+.herobg img {
+  width: 100%;
+}
+
+.showPass {
+  margin-left: 1.8rem;
+  margin-right: .5rem;
+  font-size: 1.25rem;
+  font-family: inherit;
+  color: inherit;
+  margin-bottom: 1.6rem;
+}
+
+.showPass--text {
+  font-size: 1.37rem;
+}
